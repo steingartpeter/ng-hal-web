@@ -1,0 +1,56 @@
+<mat-toolbar>
+  <span style="margin-right: 20px">HAL - General</span>
+  <!--
+   First menu element
+  -->
+  <button
+    class="menu-button"
+    mat-flat-button
+    [matMenuTriggerFor]="menu01"
+    aria-label="Example icon-button with a menu"
+  >
+    Menu 01
+  </button>
+  <mat-menu #menu01="matMenu">
+    <button mat-menu-item [routerLink]="'01-01'">
+      <mat-icon>dialpad</mat-icon>
+      <span>Redial</span>
+    </button>
+    <button mat-menu-item disabled [routerLink]="'01-02'">
+      <mat-icon>voicemail</mat-icon>
+      <span>Check voice mail</span>
+    </button>
+    <button mat-menu-item [routerLink]="'01-03'">
+      <mat-icon>notifications_off</mat-icon>
+      <span>Disable alerts</span>
+    </button>
+  </mat-menu>
+  <!--
+   First menu element
+  -->
+  <button
+    class="menu-button"
+    mat-flat-button
+    [matMenuTriggerFor]="menu02"
+    aria-label="Example icon-button with a menu"
+  >
+    Menu 02
+  </button>
+  <mat-menu #menu02="matMenu" [routerLink]="'pecek'">
+    <button mat-menu-item>
+      <mat-icon>dialpad</mat-icon>
+      <span>Redial</span>
+    </button>
+    <button mat-menu-item disabled>
+      <mat-icon>voicemail</mat-icon>
+      <span>Check voice mail</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>notifications_off</mat-icon>
+      <span>Disable alerts</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>
+<div class="base-site-cntnr">
+  <p>In this site we see the HOME for the GENERAL module</p>
+</div>

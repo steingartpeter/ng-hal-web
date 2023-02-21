@@ -1,0 +1,10 @@
+.menu-button {
+  margin: 5px;
+  height: 22px;
+}
+.mat-toolbar-single-row {
+  height: 42px;
+}
+.mat-mdc-menu-item {
+  min-height: 24px;
+}
