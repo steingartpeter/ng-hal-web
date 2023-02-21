@@ -12,3 +12,18 @@ body {
   margin: 10px;
   padding: 10px;
 }
+.menu-button {
+  margin: 5px;
+  height: 22px;
+}
+.mat-toolbar-single-row {
+  height: 42px;
+}
+.mat-mdc-menu-item {
+  min-height: 24px;
+}
+.main-home-icon {
+  color: #fabe00;
+  margin-right: 22px;
+  cursor: pointer;
+}
